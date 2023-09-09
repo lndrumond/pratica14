@@ -24,12 +24,10 @@
                             <a class="nav-link" aria-current="page" href="#">Lorem 1</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Serviços</a>
+                            <a class="nav-link" href="#serviços">Serviços</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Lorem 3</a>                            
+                            <a class="nav-link " href="#contato">Contato</a>                            
                         </li>
                     </ul>
                 </div>
@@ -43,7 +41,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus justo viverra ex imperdiet, vitae ultricies nisl rutrum. In eu molestie augue. Praesent ac maximus ante, eget bibendum nisl. Quisque id turpis eget arcu semper fermentum vitae ut eros. Donec sagittis arcu ut arcu egestas semper a sed lectus. Mauris nec dui massa. Nunc at varius augue. Quisque dui justo, volutpat a mi quis, condimentum ullamcorper libero. Curabitur lectus ante, scelerisque quis tincidunt id, lacinia vel elit. Cras in diam libero. Phasellus id est non lorem tincidunt facilisis. Aenean volutpat a ligula eu pulvinar. Integer sodales, mi nec sollicitudin viverra, sem tellus condimentum tortor, a placerat enim mi eu sem. Nullam imperdiet tortor nibh, mattis consequat felis cursus eget.
         </p>
     </section>
-    <section class="container-fluid text-bg-primary text-light text-center">
+    <section class="container-fluid text-bg-primary text-light text-center" id="serviços">
             <h2>Conheça nossos produtos</h2>
             <p>Lorem ipsum dolor sit amet</p>
             <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -53,8 +51,7 @@
                         <div class="card-body bg-warning">
                             <h5 class="card-title">Standard</h5>
                             <h1 class="card-subtitle text-muted">R$ 200,00</h1>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
+                            <p class="card-text">Produto standard recursos basicos, suporte tecnico.</p>
                         </div>
                         <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</a>
                         <div class="card-footer">
@@ -68,8 +65,7 @@
                         <div class="card-body bg-warning">
                             <h5 class="card-title">Plus</h5>
                             <h1 class="card-subtitle text-muted">R$ 350,00</h1>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
+                            <p class="card-text">Produto Plus com gerenciamento centralizado suporte 24h </p>
                         </div>
                         <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</a>
                         <div class="card-footer">
@@ -83,8 +79,7 @@
                         <div class="card-body bg-warning">
                             <h5 class="card-title">Premium</h5>
                             <h1 class="card-subtitle text-muted">R$ 450.00</h1>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
+                            <p class="card-text">Produto Premium gerencialmente na nuvem, suporte 24h consultor exclusivo</p>
                         </div>
                         <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</a>
                         <div class="card-footer">
@@ -95,14 +90,48 @@
             </div>
     
     </section>
-    <section class="container-fluid text-black text-center">
-        <h3> Lorem 3 </h3>
+    <section class="container-fluid text-black">
+        <h3 class="text-center"> Lorem 3 </h3>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget luctus erat. Etiam eget mi velit. Fusce purus ligula, placerat laoreet est nec, efficitur blandit ex. Fusce lobortis massa sit amet egestas vehicula. Sed tempus, felis sit amet fringilla dictum, nisi massa euismod elit, ac elementum ligula nunc et urna. Suspendisse nec augue in magna lobortis posuere. Suspendisse id mauris molestie, placerat nisl vel, imperdiet enim. Vestibulum luctus, mi ac interdum dictum, augue purus sollicitudin nisl, quis elementum tortor velit vel urna.
             Etiam quam lorem, tristique ut consequat sit amet, volutpat at tellus. Aliquam lacus odio, hendrerit vel felis at, suscipit vehicula risus. Nullam ultrices massa sem, a efficitur dolor suscipit a. In a venenatis urna. Etiam dictum semper risus, in porta velit laoreet vel. Etiam euismod mollis tellus at pulvinar. Nam mattis vitae justo ac fermentum. Sed nec enim viverra, pellentesque tortor quis, aliquam quam.
         </P>
+        
     </section>
-    <footer class="container-fluid text-center bg-primary p-2 text-light">
+    <section class="container-fluid text-light text-bg-primary" id="contato">
+        <form method="GET" action="">
+            <fieldset>
+                <legend class="text-center">Contato</legend>
+                <div class="mb-3">
+                    <label class="form-label" for="nome">Nome</label>
+                    <input type="text" class="form-control" name="nome" id="nome">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="telefone">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" name="telefone">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Setor que deseja contato:</legend>
+                <label>
+                    <input type="radio" name="atendimento" value="comercial" > Equipe de vendas
+                </label><br><br>
+                <label>
+                    <input type="radio" name="atendimento" value="suporteTecnico" > Suporte Técnico
+                </label><br><br>
+            </fieldset>
+            <label>Comentario</label> <br>
+            <textarea rows="5" name="Comentario"></textarea> <br><br>
+
+            <button class="btn btn-secondary">Enviar</button><br><br>
+
+        </form>
+    </section>
+    <footer class="container-fluid text-center p-2 text-black">
         <p>  copyright © 2023 todos os direitos reservados </p>
 
     </footer>
